@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Lexend:wght@100;200;300;500&display=swap");
+
+:root {
+    --light: #ffffff;
+    --dark: #1e1e1e;
+    --color1: #202340;
+    --color2: #8d99ae;
+    --color3: #edf2f4;
+    --color4: #a269ff;
+    --color5: #8423ff;
+}
+
+.img-logo {
+    width: 200px;
+    margin: 10px auto;
+    padding-top: 15px;
+    display: block;
+}
+
+@media only screen and (max-width: 576px) {
+    .login-container {
+        padding: 50px 30px;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .login-container {
+        padding: 50px 120px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .login-container {
+        padding: 50px 200px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .login-container {
+        padding: 50px 300px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .login-container {
+        padding: 50px 460px;
+    }
+}
+
+hr {
+    border: 1px solid var(--light);
+}
+/* width */
+nav ::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--light);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--color5);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color5);
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffffca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.preloader-spinner {
+    border: 10px solid var(--color4);
+    border-top: 10px solid var(--color5);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.content {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+@keyframes cube {
+    from {
+        transform: scale(0) rotate(0deg) translate(-50%, -50%);
+        opacity: 1;
+    }
+    to {
+        transform: scale(20) rotate(960deg) translate(-50%, -50%);
+        opacity: 0;
+    }
+}

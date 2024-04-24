@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Lexend:wght@100;200;300;500&display=swap");
+
+:root {
+    --light: #ffffff;
+    --dark: #1e1e1e;
+    --color1: #202340;
+    --color2: #8d99ae;
+    --color3: #edf2f4;
+    --color4: #a269ff;
+    --color5: #8423ff;
+}
+
+.btn-primary {
+    background-color: var(--color5);
+}
+
+.btn-primary:hover {
+    background-color: var(--color4);
+}
+
+.btn-primary:active {
+    background-color: var(--color5);
+}
+
+.card {
+    color: var(--light);
+    background-color: var(--color1);
+    border: none;
+    font-family: "Inter", sans-serif;
+}
+
+.modal-header {
+    color: var(--light);
+    background-color: var(--color5);
+    font-family: "Inter", sans-serif;
+}
+
+.modal-content {
+    color: var(--light);
+    background-color: var(--color1);
+    font-family: "Inter", sans-serif;
+}
+
+.modal-footer {
+    color: var(--color1);
+    background-color: var(--color2);
+    font-family: "Inter", sans-serif;
+}
+
+.btn {
+    font-weight: 300;
+    font-family: "Lexend", sans-serif;
+    border: none;
+}
+
+.form-control {
+    color: var(--color2);
+    font-weight: 400;
+    font-family: "Lexend", sans-serif;
+    border: none;
+    background-color: var(--light);
+}
+
+.form-control:active {
+    border: none;
+}
+
+.input-group-text {
+    justify-content: center;
+    width: 12%;
+    border: none;
+    background-color: var(--color2);
+}

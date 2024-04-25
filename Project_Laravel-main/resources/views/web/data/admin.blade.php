@@ -12,7 +12,7 @@
             background: linear-gradient(to right, #a9e4f1, #ffffff);
             width: 100vw;
             height: 100vh;
-            color: #333; /* Ubah warna teks menjadi abu-abu */
+            color: #333;
         }
 
         ::-webkit-scrollbar {
